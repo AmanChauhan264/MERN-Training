@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    background-image: url(./image.png);
+}
+.divnet{
+    height: 450px;
+    width: 300px;
+    background-color: black;
+  padding: 30px;
+
+}
+.subdivnet{
+    
+    color: white;
+    margin: 3px;
+    margin-bottom: 20px;
+}
+.input{
+    margin: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    
+}
+.Signin{
+    margin-top: 20px;
+    margin-left: 8px;
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 256px;
+    margin-right: 20px;
+    
+}
+.checkbox1{
+    color: gray;
+}
+.checkbox{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+.needhelp{
+    color: gray;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+.new{
+    color: gray;
+    margin-left: 10px;
+    
+   
+}
+.signup{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 50px;
+
+}
+.para{
+    color: gray;
+    margin-left: 10px;
+}
+.learn{
+
+    text-decoration: none;
+}
