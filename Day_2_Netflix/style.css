@@ -10,15 +10,14 @@ body{
     height: 450px;
     width: 300px;
     background-color: black;
-  padding: 30px;
-
+    padding: 30px;
 }
 .subdivnet{
     
     color: white;
     margin: 3px;
     margin-bottom: 20px;
-}
+} 
 .input{
     margin: 5px;
     width: 250px;
