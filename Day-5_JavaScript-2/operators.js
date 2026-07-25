@@ -92,17 +92,22 @@
 // 3. not   !
 
 // let age = 20;
-// if(age>18  &&  age<=22){
+// if(age>18  &&  age<=22){        // true if both conditions are true
 //     console.log("You are eligible to vote Modiji")
 // }else{
 //     console.log("Not eligible")
 // }
 
-let age = 20;
-if(age>181  ||  age<=22){
-    console.log("You are eligible to vote Modiji")
-}else{
-    console.log("Not eligible")
-}
+// let age = 20;
+// if(age>181  ||  age<=22){      // false if both condiitons are false
+//     console.log("You are eligible to vote Modiji")
+// }else{
+//     console.log("Not eligible")
+// }
 
+// ----------- Ternary -------------->
+
+// let age = 20;
+// let res = (age>=18)?"adult" : "child" ;    // ? is if and : is else
+// console.log(res)        // adult
 

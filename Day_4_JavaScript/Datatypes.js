@@ -1,12 +1,12 @@
 // ----------- Datatypes --------------->
 
-const { captureOwnerStack } = require("react");
+// const { captureOwnerStack } = require("react");
 
 // ----------Primitive datatypes -------->
 // Number
 // Boolean
 // String
-// null
+// null 
 // undefined
 // Symbol
 // BigInt
