@@ -7,7 +7,7 @@
 // Boolean
 // String
 // null 
-// undefined
+// undefined 
 // Symbol
 // BigInt
 

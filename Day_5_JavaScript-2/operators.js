@@ -1,6 +1,6 @@
 // -------------- Operators -------------->
 
-// symbols that perform perticular functions
+// symbols that performs perticular Task
 
 // ----------types----------->
 
@@ -18,7 +18,7 @@
 // console.log(c)
 
 // let a = 10;
-// let b = 5;
+// let b = 5; 
 // let c = a-b;
 // console.log(c)
 
