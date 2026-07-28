@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        
-    </script>
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
 </head>
 <body>
-    
+<script>
+    let marks = parseInt(prompt("Enter Marks: "));
+    let grade;
+
+    switch (true) {
+        case(marks >= 100):
+        grade = "Invalid Marks";
+        break;
+         
+        case (marks >= 90 ):
+            grade = "Grade A";
+            break;
+
+        case (marks >=80):
+            grade = "Grade B";
+            break;
+
+        case (marks >= 65):
+            grade = "Grade C";
+            break;
+
+        case (marks >= 33):
+            grade = "Grade D";
+            break;
+
+        case (marks >=0):
+            grade = "Fail";
+            break;
+
+        default:
+            grade = "Invalid Marks";
+    }
+
+    alert(grade);
+</script>
+
 </body>
 </html>
