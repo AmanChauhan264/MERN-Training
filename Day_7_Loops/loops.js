@@ -75,4 +75,5 @@
 // } while (i<=10);
 
 // Homework 
-// print diamond pattern
+// print diamond pattern 
+// learn string and string methods 
