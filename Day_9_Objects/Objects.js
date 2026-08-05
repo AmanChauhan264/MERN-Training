@@ -181,7 +181,7 @@ let user = {
     },
 
     greet: function () {
-        return My name is ${this.firstname};
+        // return My name is ${this.firstname};
     }
 
 };
@@ -438,7 +438,7 @@ let user2 = {
 function introduce(city, course) {
 
     console.log(
-        My name is ${this.firstname}, I live in ${city} and I am learning ${course}
+        // My name is ${this.firstname}, I live in ${city} and I am learning ${course}
     );
 
 }
