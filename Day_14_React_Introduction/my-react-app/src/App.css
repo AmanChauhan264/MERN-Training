@@ -1,0 +1,72 @@
+#navbar{
+       background: linear-gradient( to right , black , purple);
+    box-shadow: 5px 8px 11px grey;
+}
+
+#navbar ul li a{
+    color : white ;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.bi-amd{
+    font-size: 27px;
+    color : white ; 
+}
+
+/* --------------------------------- */
+
+#counterparent{
+display: flex;
+align-items: center;
+justify-content: center;
+margin:   0 ;
+height: 86vh;
+}
+
+#counterchild{
+    height: 400px;
+    width: 310px;
+    background: linear-gradient( to right , black , purple);
+    border-radius: 5%;
+}
+
+#counterheading{
+    color : white ; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#zerovalue{
+        color : white ; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#buttoninc{
+    height: 45px;
+    width: 180px;
+    margin-left: 55px;
+    background: linear-gradient(to right  , rgb(6, 144, 6) , green);
+    color : white ; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid green;
+    font-size: 15px;
+}
+
+#buttondec{
+      height: 45px;
+    width: 180px;
+    margin-left: 55px;
+    background: linear-gradient(to right  , rgb(245, 22, 22) , rgb(120, 3, 3));
+    color : white ; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid rgb(153, 24, 7);
+    margin-top: 10px;
+    font-size: 15px;
+}
