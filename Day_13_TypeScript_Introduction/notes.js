@@ -33,9 +33,9 @@ console.log("===== TYPESCRIPT BASICS =====\n");
 // undefined
 
 
-let userName: string = "Aman";
-let age: number = 21;
-let isStudent: boolean = true;
+// let userName: string = "Aman";
+// let age: number = 21;
+// let isStudent: boolean = true;
 
 
 console.log("Name:", userName);
@@ -73,19 +73,19 @@ let passed = true;
 // Array<type>
 
 
-let numbers: number[] = [10, 20, 30, 40];
+// let numbers: number[] = [10, 20, 30, 40];
 
-let names: string[] = [
-    "Aman",
-    "Rahul",
-    "Govind"
-];
+// let names: string[] = [
+//     "Aman",
+//     "Rahul",
+//     "Govind"
+// ];
 
-let scores: Array<number> = [80, 90, 75];
+// let scores: Array<number> = [80, 90, 75];
 
 
-console.log("Numbers:", numbers);
-console.log("Names:", names);
+// console.log("Numbers:", numbers);
+// console.log("Names:", names);
 
 
 // ------------------------------------------------------------
@@ -96,13 +96,13 @@ console.log("Names:", names);
 // fixed types define kar sakte hain.
 
 
-let student: [string, number] = [
-    "Aman",
-    21
-];
+// let student: [string, number] = [
+//     "Aman",
+//     21
+// ];
 
 
-console.log("Student:", student);
+// console.log("Student:", student);
 
 
 // ------------------------------------------------------------
@@ -112,16 +112,16 @@ console.log("Student:", student);
 // Object ke properties ke types define kar sakte hain.
 
 
-let person: {
-    name: string;
-    age: number;
-} = {
-    name: "Aman",
-    age: 21
-};
+// let person: {
+//     name: string;
+//     age: number;
+// } = {
+//     name: "Aman",
+//     age: 21
+// };
 
 
-console.log("Person:", person);
+// console.log("Person:", person);
 
 
 // ------------------------------------------------------------
@@ -131,15 +131,15 @@ console.log("Person:", person);
 // ? ka use optional property ke liye hota hai.
 
 
-let employee: {
-    name: string;
-    salary?: number;
-} = {
-    name: "Aman"
-};
+// let employee: {
+//     name: string;
+//     salary?: number;
+// } = {
+//     name: "Aman"
+// };
 
 
-console.log("Employee:", employee);
+// console.log("Employee:", employee);
 
 
 // ------------------------------------------------------------
@@ -149,14 +149,14 @@ console.log("Employee:", employee);
 // Function parameters ka type define kar sakte hain.
 
 
-function add(a: number, b: number) {
+// function add(a: number, b: number) {
 
-    return a + b;
+//     return a + b;
 
-}
+// }
 
 
-console.log("Sum:", add(10, 20));
+// console.log("Sum:", add(10, 20));
 
 
 // ------------------------------------------------------------
@@ -167,14 +167,14 @@ console.log("Sum:", add(10, 20));
 // uska type bhi specify kar sakte hain.
 
 
-function greet(name: string): string {
+// function greet(name: string): string {
 
-    return "Hello " + name;
+//     return "Hello " + name;
 
-}
+// }
 
 
-console.log(greet("Aman"));
+// console.log(greet("Aman"));
 
 
 // ------------------------------------------------------------
@@ -185,14 +185,14 @@ console.log(greet("Aman"));
 // jo koi value return nahi karte.
 
 
-function printMessage(message: string): void {
+// function printMessage(message: string): void {
 
-    console.log(message);
+//     console.log(message);
 
-}
+// }
 
 
-printMessage("Learning TypeScript");
+// printMessage("Learning TypeScript");
 
 
 // ------------------------------------------------------------
@@ -205,14 +205,14 @@ printMessage("Learning TypeScript");
 // Isliye any ko carefully use karna chahiye.
 
 
-let data: any = "Hello";
+// let data: any = "Hello";
 
-data = 100;
+// data = 100;
 
-data = true;
+// data = true;
 
 
-console.log("Any:", data);
+// console.log("Any:", data);
 
 
 // ------------------------------------------------------------
@@ -225,14 +225,14 @@ console.log("Any:", data);
 // type check karna padta hai.
 
 
-let value: unknown = "TypeScript";
+// let value: unknown = "TypeScript";
 
 
-if (typeof value === "string") {
+// if (typeof value === "string") {
 
-    console.log(value.toUpperCase());
+//     console.log(value.toUpperCase());
 
-}
+// }
 
 
 // ------------------------------------------------------------
@@ -244,14 +244,14 @@ if (typeof value === "string") {
 // | operator use hota hai.
 
 
-let id: string | number;
+// let id: string | number;
 
-id = 101;
+// id = 101;
 
-id = "A101";
+// id = "A101";
 
 
-console.log("ID:", id);
+// console.log("ID:", id);
 
 
 // ------------------------------------------------------------
@@ -261,8 +261,7 @@ console.log("ID:", id);
 // Literal type me sirf specified values allowed hoti hain.
 
 
-let direction: "left" | "right" | "center";
-
+// let direction: "left" | "right" | "center";
 
 direction = "left";
 
@@ -271,60 +270,60 @@ direction = "left";
 // Error
 
 
-console.log("Direction:", direction);
+// console.log("Direction:", direction);
 
 
-// ------------------------------------------------------------
-// 14. Type Alias
-// ------------------------------------------------------------
+// // ------------------------------------------------------------
+// // 14. Type Alias
+// // ------------------------------------------------------------
 
-// type keyword se custom type create kar sakte hain.
-
-
-type User = {
-
-    name: string;
-    age: number;
-
-};
+// // type keyword se custom type create kar sakte hain.
 
 
-let user: User = {
+// type User = {
 
-    name: "Aman",
-    age: 21
+//     name: string;
+//     age: number;
 
-};
-
-
-console.log("User:", user);
+// };
 
 
-// ------------------------------------------------------------
-// 15. Interface
-// ------------------------------------------------------------
+// let user: User = {
 
-// Interface object ka structure define karne ke liye
-// commonly use hota hai.
+//     name: "Aman",
+//     age: 21
 
-
-interface Product {
-
-    name: string;
-    price: number;
-
-}
+// };
 
 
-let product: Product = {
-
-    name: "Laptop",
-    price: 50000
-
-};
+// console.log("User:", user);
 
 
-console.log("Product:", product);
+// // ------------------------------------------------------------
+// // 15. Interface
+// // ------------------------------------------------------------
+
+// // Interface object ka structure define karne ke liye
+// // commonly use hota hai.
+
+
+// interface Product {
+
+//     name: string;
+//     price: number;
+
+// }
+
+
+// let product: Product = {
+
+//     name: "Laptop",
+//     price: 50000
+
+// };
+
+
+// console.log("Product:", product);
 
 
 // ------------------------------------------------------------
@@ -332,190 +331,190 @@ console.log("Product:", product);
 // ------------------------------------------------------------
 
 
-interface Car {
+// interface Car {
 
-    brand: string;
-    model: string;
-    year?: number;
+//     brand: string;
+//     model: string;
+//     year?: number;
 
-}
+// }
 
 
-let car: Car = {
+// let car: Car = {
 
-    brand: "Toyota",
-    model: "Camry"
+//     brand: "Toyota",
+//     model: "Camry"
 
-};
+// };
 
 
-console.log("Car:", car);
+// console.log("Car:", car);
 
 
-// ------------------------------------------------------------
-// 17. Enum
-// ------------------------------------------------------------
+// // ------------------------------------------------------------
+// // 17. Enum
+// // ------------------------------------------------------------
 
-// Enum related named constants define karne ke liye use hota hai.
+// // Enum related named constants define karne ke liye use hota hai.
 
 
-enum Direction {
+// enum Direction {
 
-    Up,
-    Down,
-    Left,
-    Right
+//     Up,
+//     Down,
+//     Left,
+//     Right
 
-}
+// }
 
 
-let move: Direction = Direction.Up;
+// let move: Direction = Direction.Up;
 
 
-console.log("Direction:", move);
+// console.log("Direction:", move);
 
 
-// ------------------------------------------------------------
-// 18. Type Assertion
-// ------------------------------------------------------------
+// // ------------------------------------------------------------
+// // 18. Type Assertion
+// // ------------------------------------------------------------
 
-// Type assertion se TypeScript ko bata sakte hain
-// ki hume kisi value ka specific type pata hai.
-//
-// Do common syntaxes:
-//
-// value as string
-// <string>value
+// // Type assertion se TypeScript ko bata sakte hain
+// // ki hume kisi value ka specific type pata hai.
+// //
+// // Do common syntaxes:
+// //
+// // value as string
+// // <string>value
 
 
-let someValue: unknown = "Hello TypeScript";
+// let someValue: unknown = "Hello TypeScript";
 
-let stringValue = someValue as string;
+// let stringValue = someValue as string;
 
 
-console.log("String:", stringValue);
+// console.log("String:", stringValue);
 
 
-// ------------------------------------------------------------
-// 19. Classes
-// ------------------------------------------------------------
+// // ------------------------------------------------------------
+// // 19. Classes
+// // ------------------------------------------------------------
 
-// TypeScript classes JavaScript classes ke similar hoti hain.
-// Properties aur methods ke types define kar sakte hain.
+// // TypeScript classes JavaScript classes ke similar hoti hain.
+// // Properties aur methods ke types define kar sakte hain.
 
 
-class Student {
+// class Student {
 
-    name: string;
-    age: number;
+//     name: string;
+//     age: number;
 
-    constructor(name: string, age: number) {
+//     constructor(name: string, age: number) {
 
-        this.name = name;
-        this.age = age;
+//         this.name = name;
+//         this.age = age;
 
-    }
+//     }
 
-    display(): void {
+//     display(): void {
 
-        console.log(
-            this.name,
-            this.age
-        );
+//         console.log(
+//             this.name,
+//             this.age
+//         );
 
-    }
+//     }
 
-}
+// }
 
 
-let studentOne = new Student("Aman", 21);
+// let studentOne = new Student("Aman", 21);
 
-studentOne.display();
+// studentOne.display();
 
 
-// ------------------------------------------------------------
-// 20. Access Modifiers
-// ------------------------------------------------------------
+// // ------------------------------------------------------------
+// // 20. Access Modifiers
+// // ------------------------------------------------------------
 
-// TypeScript me commonly:
-//
-// public
-// private
-// protected
-//
-// use hote hain.
-//
-// public -> kahin se access
-// private -> sirf class ke andar
-// protected -> class aur child classes
+// // TypeScript me commonly:
+// //
+// // public
+// // private
+// // protected
+// //
+// // use hote hain.
+// //
+// // public -> kahin se access
+// // private -> sirf class ke andar
+// // protected -> class aur child classes
 
 
-class Account {
+// class Account {
 
-    public name: string;
+//     public name: string;
 
-    private balance: number;
+//     private balance: number;
 
-    constructor(name: string, balance: number) {
+//     constructor(name: string, balance: number) {
 
-        this.name = name;
-        this.balance = balance;
+//         this.name = name;
+//         this.balance = balance;
 
-    }
+//     }
 
-    getBalance(): number {
+//     getBalance(): number {
 
-        return this.balance;
+//         return this.balance;
 
-    }
+//     }
 
-}
+// }
 
 
-let account = new Account(
-    "Aman",
-    5000
-);
+// let account = new Account(
+//     "Aman",
+//     5000
+// );
 
 
-console.log(account.name);
-console.log(account.getBalance());
+// console.log(account.name);
+// console.log(account.getBalance());
 
 
-// ------------------------------------------------------------
-// 21. Inheritance
-// ------------------------------------------------------------
+// // ------------------------------------------------------------
+// // 21. Inheritance
+// // ------------------------------------------------------------
 
-// extends keyword se ek class doosri class ko inherit kar sakti hai.
+// // extends keyword se ek class doosri class ko inherit kar sakti hai.
 
 
-class Animal {
+// class Animal {
 
-    move(): void {
+//     move(): void {
 
-        console.log("Animal is moving");
+//         console.log("Animal is moving");
 
-    }
+//     }
 
-}
+// }
 
 
-class Dog extends Animal {
+// class Dog extends Animal {
 
-    bark(): void {
+//     bark(): void {
 
-        console.log("Dog is barking");
+//         console.log("Dog is barking");
 
-    }
+//     }
 
-}
+// }
 
 
-let dog = new Dog();
+// let dog = new Dog();
 
-dog.move();
+// dog.move();
 
-dog.bark();
+// dog.bark();
 
 
 // ------------------------------------------------------------
@@ -526,16 +525,16 @@ dog.bark();
 // use hote hain.
 
 
-function identity<T>(value: T): T {
+// function identity<T>(value: T): T {
 
-    return value;
+//     return value;
 
-}
+// }
 
 
-console.log(identity<string>("Hello"));
+// console.log(identity<string>("Hello"));
 
-console.log(identity<number>(100));
+// console.log(identity<number>(100));
 
 
 // ------------------------------------------------------------
@@ -543,49 +542,49 @@ console.log(identity<number>(100));
 // ------------------------------------------------------------
 
 
-function getFirst<T>(items: T[]): T {
+// function getFirst<T>(items: T[]): T {
 
-    return items[0];
+//     return items[0];
 
-}
-
-
-console.log(
-    getFirst<number>([10, 20, 30])
-);
-
-console.log(
-    getFirst<string>(["A", "B", "C"])
-);
+// }
 
 
-// ------------------------------------------------------------
-// 24. Type Narrowing
-// ------------------------------------------------------------
+// console.log(
+//     getFirst<number>([10, 20, 30])
+// );
 
-// Union type ke saath actual type check karna
-// Type Narrowing kehlata hai.
-
-
-function printValue(value: string | number): void {
-
-    if (typeof value === "string") {
-
-        console.log("String:", value.toUpperCase());
-
-    }
-    else {
-
-        console.log("Number:", value.toFixed(2));
-
-    }
-
-}
+// console.log(
+//     getFirst<string>(["A", "B", "C"])
+// );
 
 
-printValue("hello");
+// // ------------------------------------------------------------
+// // 24. Type Narrowing
+// // ------------------------------------------------------------
 
-printValue(100);
+// // Union type ke saath actual type check karna
+// // Type Narrowing kehlata hai.
+
+
+// function printValue(value: string | number): void {
+
+//     if (typeof value === "string") {
+
+//         console.log("String:", value.toUpperCase());
+
+//     }
+//     else {
+
+//         console.log("Number:", value.toFixed(2));
+
+//     }
+
+// }
+
+
+// printValue("hello");
+
+// printValue(100);
 
 
 // ------------------------------------------------------------
@@ -593,14 +592,14 @@ printValue(100);
 // ------------------------------------------------------------
 
 
-let emptyValue: null = null;
+// let emptyValue: null = null;
 
-let notAssigned: undefined = undefined;
+// let notAssigned: undefined = undefined;
 
 
-console.log("Null:", emptyValue);
+// console.log("Null:", emptyValue);
 
-console.log("Undefined:", notAssigned);
+// console.log("Undefined:", notAssigned);
 
 
 // ------------------------------------------------------------
@@ -610,22 +609,22 @@ console.log("Undefined:", notAssigned);
 // Promise ka return type bhi specify kar sakte hain.
 
 
-function getData(): Promise<string> {
+// function getData(): Promise<string> {
 
-    return new Promise(function(resolve) {
+//     return new Promise(function(resolve) {
 
-        resolve("Data received");
+//         resolve("Data received");
 
-    });
+//     });
 
-}
+// }
 
 
-getData().then(function(result) {
+// getData().then(function(result) {
 
-    console.log("Promise:", result);
+//     console.log("Promise:", result);
 
-});
+// });
 
 
 // ------------------------------------------------------------
@@ -633,23 +632,23 @@ getData().then(function(result) {
 // ------------------------------------------------------------
 
 
-async function fetchData(): Promise<string> {
+// async function fetchData(): Promise<string> {
 
-    return "Data fetched";
+//     return "Data fetched";
 
-}
-
-
-async function showData(): Promise<void> {
-
-    let result: string = await fetchData();
-
-    console.log(result);
-
-}
+// }
 
 
-showData();
+// async function showData(): Promise<void> {
+
+//     let result: string = await fetchData();
+
+//     console.log(result);
+
+// }
+
+
+// showData();
 
 
 // ------------------------------------------------------------
@@ -679,20 +678,20 @@ showData();
 // normally change nahi kar sakte.
 
 
-interface StudentInfo {
+// interface StudentInfo {
 
-    readonly id: number;
-    name: string;
+//     readonly id: number;
+//     name: string;
 
-}
+// }
 
 
-let studentInfo: StudentInfo = {
+// let studentInfo: StudentInfo = {
 
-    id: 101,
-    name: "Aman"
+//     id: 101,
+//     name: "Aman"
 
-};
+// };
 
 
 // studentInfo.id = 102;
