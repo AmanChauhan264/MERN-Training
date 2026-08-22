@@ -39,6 +39,9 @@ height: 86vh;
     font-size: 30px;
     text-align: center;
 }
+body{
+    background-color: #1a1a1a;
+}
 
 #zerovalue{
         color : white ; 

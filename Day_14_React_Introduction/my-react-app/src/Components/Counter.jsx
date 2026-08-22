@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Counter = () => {
-   const [counter , setCounter] =  useState(10)
+   const [counter , setCounter] =  useState(45)
 
    function handleinc(){
     setCounter(counter+1)
