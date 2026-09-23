@@ -11,7 +11,7 @@ function App() {
   }, [count]);
 
 const handleclick = useCallback(()=>{
-  console.log("code is running");
+  console.log("code is running");  
 });
 
   // useEffect(() => {

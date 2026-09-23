@@ -591,5 +591,17 @@ function Users() {
 
 
 // ============================================================
-//                    END OF REACT.JS
+//                 
 // ============================================================
+
+
+// use memo and use callback.
+// to prevent rerendering.
+// remembers calc  until no chnge.
+// use memo used on calc.
+// use callback memorizes function.  until changes happens
+// if changes happen then the rerendering will happen.
+
+// calculation - useMemo.
+// function - useCallback.
+
