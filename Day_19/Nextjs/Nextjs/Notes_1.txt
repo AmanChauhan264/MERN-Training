@@ -1,0 +1,129 @@
+1. Next.js kya hai?
+
+Next.js ek React framework hai jo React application ko production-ready banane ke liye additional features provide karta hai.
+
+Simple way:
+
+React = UI banane ki library
+Next.js = React + Routing + Backend APIs + Rendering + Optimization + Full-stack features
+
+----------------------------------------------------------------------------------------
+
+Example:
+
+React mein normally aapko routing ke liye React Router install karna padta hai.
+
+Next.js mein:
+
+app/
+ ├── page.js
+ ├── about/
+ │    └── page.js
+ └── contact/
+      └── page.js
+
+Folder structure ke basis par routing automatically ho jaati hai.
+-----------------------------------------------------------------------------------------
+
+2. Next.js kyun use karte hain?
+
+Traditional React application mein humein bahut saari cheezein separately configure/install
+karni pad sakti hain.
+
+Next.js already bahut kuch provide karta hai:
+
+
+
+Routing
+Dynamic Routing
+API / Backend Routes
+Server Components
+Client Components
+Server-Side Rendering
+Static Site Generation
+SEO support
+Image optimization
+Font optimization
+Middleware
+Authentication implementation
+Database integration
+Full-stack application development
+
+Isliye Next.js se hum frontend + backend dono bana sakte hain.
+
+--------------------------------------------------------------------------
+
+3. React aur Next.js mein basic difference : 
+
+-------------------------------------------------------------------------
+| React                              | Next.js                          |
+| ---------------------------------- | -------------------------------- |
+| UI library                         | React framework                  |
+| Mainly frontend                    | Full-stack applications          |
+| Routing separately setup           | File-based routing               |
+| Backend separately                 | Backend/API possible             |
+| SEO configuration more manual      | SEO support built-in             |
+| Rendering options limited to setup | SSR, SSG, Server Components etc. |
+| React Router commonly used         | App Router built-in              |
+-------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+
+
+4. Next.js ka current important concept
+
+Next.js mein modern applications ke liye App Router use hota hai.
+
+Basic structure:
+
+Agar aap src folder ke saath project banana chahte hain, to installation ke time ye option choose karein:
+
+--->  npx create-next-app@latest my-next-app --js --src-dir
+
+Would you like to use a src/ directory? → Yes
+
+
+my-next-app/
+│
+├── src/
+│   └── app/
+│       ├── layout.js
+│       ├── page.js
+│       └── globals.css
+│
+├── public/
+│
+├── package.json
+├── next.config.mjs
+└── ...
+
+
+1. Folder Structure
+
+src ke saath structure:
+
+
+my-next-app/
+│
+├── public/
+│
+└── src/
+    ├── app/
+    │   ├── about/
+    │   │   └── page.js
+    │   │
+    │   ├── services/
+    │   │   └── page.js
+    │   │
+    │   ├── contact/
+    │   │   └── page.js
+    │   │
+    │   ├── globals.css
+    │   ├── layout.js
+    │   └── page.js
+    │
+    └── components/
+        ├── Navbar.js
+        └── Footer.js
+-----------------------------------------------------------------
+
