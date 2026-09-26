@@ -7,6 +7,8 @@ Simple way:
 React = UI banane ki library
 Next.js = React + Routing + Backend APIs + Rendering + Optimization + Full-stack features
 
+
+SIO - search engine optimization
 ----------------------------------------------------------------------------------------
 
 Example:
@@ -31,9 +33,6 @@ Traditional React application mein humein bahut saari cheezein separately config
 karni pad sakti hain.
 
 Next.js already bahut kuch provide karta hai:
-
-
-
 Routing
 Dynamic Routing
 API / Backend Routes
@@ -97,14 +96,12 @@ my-next-app/
 ├── next.config.mjs
 └── ...
 
-
 1. Folder Structure
 
 src ke saath structure:
 
-
 my-next-app/
-│
+│  
 ├── public/
 │
 └── src/
@@ -126,4 +123,3 @@ my-next-app/
         ├── Navbar.js
         └── Footer.js
 -----------------------------------------------------------------
-
